@@ -1,0 +1,257 @@
+:root {
+  --background-color: #FBFCFE;
+  --border-color: #F8F8F8;
+
+  --green-color: #21AF8D;
+  --blue-color: #15295B;
+  --red-color: #BB4C4C;
+
+  --hover-color: #2DA88A;
+
+  --heading-color: #2B2525;
+  --text-color: #1E1E1E;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Work Sans', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+header, footer {
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li, img, input, button, fieldset {
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+a, button {
+  cursor: pointer;
+  user-select: none;
+}
+
+a.main__button, button.main__button {
+  font-size: 1.6rem;
+  display: block;
+  max-width: max-content;
+  color: #FFF;
+  background-color: var(--green-color);
+  padding: 12px 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: .2s ease-in-out;
+}
+
+a.main__button:hover, button.main__button:hover {
+  background-color: var(--hover-color);
+}
+
+a.remove__button {
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #FFF;
+  background-color: var(--red-color);
+  padding: 12px 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: .2s ease-in-out;
+}
+
+a.remove__button::before {
+  content: '';
+  display: block;
+  height: 18px;
+  width: 18px;
+  margin-right: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.75 2.25V3H3V4.5H3.75V14.25C3.75 14.6478 3.90804 15.0294 4.18934 15.3107C4.47064 15.592 4.85218 15.75 5.25 15.75H12.75C13.1478 15.75 13.5294 15.592 13.8107 15.3107C14.092 15.0294 14.25 14.6478 14.25 14.25V4.5H15V3H11.25V2.25H6.75ZM5.25 4.5H12.75V14.25H5.25V4.5ZM6.75 6V12.75H8.25V6H6.75ZM9.75 6V12.75H11.25V6H9.75Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* LANDING BODY */
+
+body.landing__body {
+  background-color: #131414;
+  color: #FFF;
+}
+
+body.landing__body section {
+  width: 100%;
+}
+
+body.landing__body section .container {
+  max-width: 1460px;
+  padding: 140px 30px;
+}
+
+body.landing__body section h1 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #FFF;
+  text-align: center;
+}
+
+body.landing__body section h2 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #FFF;
+  text-align: center;
+}
+
+body.landing__body section p {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFF;
+  opacity: .9;
+  text-align: center;
+}
+
+body.landing__body section.sec__1 {
+  background: url('/images/landing-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.landing__body section.sec__1 .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body.landing__body section.sec__2 .container h2 {
+  margin-bottom: 80px;
+}
+
+body.landing__body section.sec__2 .container .steps__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.landing__body section.sec__2 .container .steps__row>div {
+  width: 28%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #19191B;
+  border: solid 1px #1e1e1e;
+  transition: .4s ease-in-out;
+}
+
+body.landing__body section.sec__2 .container .steps__row>div:hover {
+  background-color: #0e0e0f;
+  transform: translateY(-6px);
+}
+
+body.landing__body section.sec__2 .container .steps__row>div p {
+  font-size: 2rem;
+}
+
+body.landing__body section.sec__3 {
+  background: url('/images/processes-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.landing__body section.sec__3 .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body.landing__body section.sec__4 h2 {
+  margin-bottom: 40px;
+}
+
+body.landing__body section.sec__4 p {
+  font-size: 2rem;
+  max-width: 640px;
+  font-weight: 300;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+body.landing__body section.sec__5 {
+  background: url('/images/join-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.landing__body section.sec__5 .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body.landing__body section.sec__5 h1 {
+  margin-bottom: 50px;
+}
+
+body.landing__body section.sec__5 a {
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: #000;
+  border: solid 1px #232323;
+  padding: 22px 64px;
+  display: block;
+  max-width: max-content;
+  border-radius: 12px;
+  text-transform: uppercase;
+  transition: .5s ease-in-out;
+}
+
+body.landing__body section.sec__5 a:hover {
+  background-color: #FFF;
+  color: #000;
+  border-color: #FFF;
+  transform: scale(1.04) rotate(2deg);
+}

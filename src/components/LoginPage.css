@@ -1,0 +1,139 @@
+/*LOGIN STYLISH*/
+
+.login header {
+    background-color: #FFF;
+    height: 112px;
+    border-bottom: 1px solid #F8F8F8;
+}
+
+.login header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login header .container h1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: var(--green-color);
+}
+
+.login header .container h1 span {
+    color: var(--blue-color);
+}
+
+.login header .container h1 b {
+    color: var(--red-color);
+    font-weight: 800;
+}
+
+.login section {
+    height: calc(100vh - 112px);
+}
+
+.login section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login section .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px;
+    max-width: 520px;
+    width: 100%;
+    min-width: min-content;
+    border: solid 1px var(--border-color);
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 8px rgba(28, 28, 28, 0.03);
+}
+
+.login section .container form legend {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.login section .container form input {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    border: solid 1px #E8E8E8;
+}
+
+.login section .container form input::placeholder,
+.login section .container form input::-moz-placeholder {
+    color: rgba(43, 37, 37, 0.4);
+}
+
+.login section .container form button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    transition: .2s ease-in-out;
+    background-color: var(--green-color);
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.login section .container form button:hover {
+    background-color: var(--hover-color);
+}
+
+.login section .container form p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #535353;
+    text-align: center;
+    width: 100%;
+}
+
+.login section .container form p a {
+    color: var(--green-color);
+    text-decoration: underline;
+    transition: .2s ease-in-out;
+}
+
+.login section .container form p a:hover {
+    color: var(--hover-color);
+}
+
+.login section .container form.register {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 580px;
+}
+
+.login section .container form.register legend {
+    justify-self: center;
+    width: 100%;
+}
+
+.login section .container form.register input {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.login section .container form.register input:last-of-type {
+    width: 100%;
+}

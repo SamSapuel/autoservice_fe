@@ -1,0 +1,334 @@
+/*BAZA STYLISH*/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FFF;
+    width: 320px;
+    border-right: solid 1px var(--border-color);
+}
+
+.navigation .profile__name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84px;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation .profile__name p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.navigation .nav__content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 84px);
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+.navigation .nav__content nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.navigation .nav__content nav a {
+    font-size: 1.6rem;
+    color: #FFF;
+    background-color: #2D51AE;
+    border-radius: 6px;
+    padding: 16px 20px;
+}
+
+.navigation .nav__content>a {
+    font-size: 1.6rem;
+    color: #FFF;
+    background-color: var(--red-color);
+    border-radius: 6px;
+    padding: 16px 20px;
+}
+
+.main__content header {
+    width: calc(100% - 320px);
+    background-color: #fff;
+    margin-left: 320px;
+    height: 84px;
+    border-bottom: solid 1px var(--border-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main__content header h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--green-color);
+}
+
+.main__content header h1 span {
+    color: var(--blue-color);
+}
+
+.main__content header h1 b {
+    color: var(--red-color);
+    font-weight: 800;
+}
+
+.main__content .main__container {
+    margin-left: 340px;
+    margin-top: 20px;
+    width: calc(100% - 360px);
+}
+
+.main__content .main__container h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.main__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.main__content table thead {
+    height: 54px;
+    background-color: #4D4D4D;
+}
+
+.main__content table thead th {
+    border: solid 1px rgba(193, 193, 193, 0.33);
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 20px;
+}
+.main__content table tr {
+    height: 54px;
+}
+.main__content table tr td {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 20px;
+    color: var(--text-color);
+    border: solid 1px rgba(147, 147, 147, 0.33);
+}
+
+.main__content table thead th:nth-child(1) {
+    width: 54px;
+    text-align: center;
+}
+
+.main__content table thead th:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+
+.main__content table thead th:nth-child(3) {
+    width: 15%;
+    text-align: center;
+}
+
+.main__content table thead th:nth-child(4) {
+    width: 20%;
+    text-align: left;
+}
+
+.main__content table thead th:nth-child(5) {
+    width: 20%;
+    text-align: left;
+}
+
+.main__content table thead th:nth-child(6) {
+    width: 10%;
+    text-align: center;
+}
+
+/*CREATE ORDER POP UP*/
+
+
+.create__order {
+    position: fixed;
+    background: rgba(52, 51, 51, 0.2);
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create__order.active {
+    display: flex;
+}
+
+.create__order>div {
+    background-color: #fff;
+    padding: 30px 50px;
+    padding-top: 50px;
+    border: solid 1px #E8E8E8;
+    border-radius: 8px;
+    position: relative;
+}
+
+.create__order>div .form__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.create__order>div h2 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.create__order>div form {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.create__order>div form select {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    outline: none;
+    border: solid 1px #E8E8E8;
+    border-radius: 8px;
+    width: 200px;
+}
+
+
+.create__order>div form button {
+    max-width: 200px;
+    width: 100%;
+}
+
+.count__changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    position: relative;
+}
+
+.count__changer input {
+    width: calc(100% - 28px);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2px 0;
+    background-color: #fff;
+    border: solid 1px #E8E8E8;
+}
+
+.count__changer a {
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #d6d6d6;
+    border-radius: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+}
+
+.count__changer a:active {
+    transition: .1s ease-in-out;
+    transform: scale(.9);
+}
+
+.count__changer a:last-child {
+    left: auto;
+    right: 0;
+}
+
+.create__order>div table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.create__order>div table thead th {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: var(--blue-color);
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    border: solid 1px #565656;
+}
+
+.create__order>div table tr td {
+    font-size: 1.4rem;
+    padding: 10px;
+    border: solid 1px #E8E8E8;
+}
+
+.create__order>div button.main__button.big__button {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.action__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.action__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 48%;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.action__button::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+.action__button.acceptbutton::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='6' y='7' width='12' height='10' fill='white'/%3E%3Cpath d='M10.6 13.8L8.45 11.65C8.26667 11.4667 8.03333 11.375 7.75 11.375C7.46667 11.375 7.23333 11.4667 7.05 11.65C6.86667 11.8333 6.775 12.0667 6.775 12.35C6.775 12.6333 6.86667 12.8667 7.05 13.05L9.9 15.9C10.1 16.1 10.3333 16.2 10.6 16.2C10.8667 16.2 11.1 16.1 11.3 15.9L16.95 10.25C17.1333 10.0667 17.225 9.83333 17.225 9.55C17.225 9.26667 17.1333 9.03333 16.95 8.85C16.7667 8.66667 16.5333 8.575 16.25 8.575C15.9667 8.575 15.7333 8.66667 15.55 8.85L10.6 13.8ZM12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6877 15.9 21.213C14.6833 21.7383 13.3833 22.0007 12 22Z' fill='%2321AF8D'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.action__button.rejectbutton::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='7' y='6' width='10' height='11' fill='white'/%3E%3Cpath d='M8.4 17L12 13.4L15.6 17L17 15.6L13.4 12L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4L10.6 12L7 15.6L8.4 17ZM12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6877 15.9 21.213C14.6833 21.7383 13.3833 22.0007 12 22Z' fill='%23BB4C4C'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
